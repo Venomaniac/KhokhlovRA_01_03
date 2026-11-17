@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="150dp"
+        android:orientation="vertical" android:padding="12dp">
+        <LinearLayout
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:orientation="vertical" android:clickable="true" android:focusable="true">
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="На главное меню" android:textColor="@color/fb_blue" android:textSize="11sp"/>
+            <ImageView
+                android:layout_width="48dp" android:layout_height="32dp"
+                android:src="@drawable/ic_arrow_back" android:contentDescription="back"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" android:gravity="center" android:text="Расчет площади"
+            android:textColor="@color/fb_pink" android:textSize="30sp" android:textStyle="bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"
+        android:orientation="vertical" android:background="@color/fb_cyan"
+        android:padding="40dp" android:gravity="center_horizontal">
+
+        <Spinner
+            android:id="@+id/spType"
+            android:layout_width="match_parent" android:layout_height="48dp"
+            android:background="@drawable/bg_white_round"/>
+
+        <EditText
+            android:id="@+id/etMeters"
+            android:layout_width="match_parent" android:layout_height="48dp"
+            android:layout_marginTop="24dp" android:background="@drawable/bg_white_round"
+            android:gravity="center" android:hint="введите количество метров"
+            android:inputType="numberDecimal" android:textSize="14sp" android:textColor="#000000"/>
+
+        <Button
+            android:id="@+id/btnCalc"
+            android:layout_width="match_parent" android:layout_height="60dp"
+            android:layout_marginTop="40dp" android:background="@drawable/bg_button"
+            android:text="РАССЧИТАТЬ" android:textColor="#FFFFFF"
+            android:textSize="20sp" android:textStyle="bold"/>
+    </LinearLayout>
+</LinearLayout>

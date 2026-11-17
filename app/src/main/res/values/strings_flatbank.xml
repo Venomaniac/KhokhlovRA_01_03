@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="flat_types">
+        <item>1-о комнатная квартира</item>
+        <item>2-х комнатная квартира</item>
+        <item>3-х комнатная квартира</item>
+        <item>Студия</item>
+    </string-array>
+</resources>
